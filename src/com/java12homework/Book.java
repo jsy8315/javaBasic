@@ -1,6 +1,6 @@
 package com.java12homework;
 
-public class Book extends TangilbleAsset {
+public class Book extends TangilbleAsset implements Thing {
     private String isbn;
     public String getIsbn() {
         return isbn;

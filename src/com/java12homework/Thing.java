@@ -1,6 +1,6 @@
 package com.java12homework;
 
 public interface Thing {
-    public String getWeight();
-    public void setWeight(double Weight);
+    double getWeight(); // 방법만 제공
+    void setWeight(double Weight);
 }

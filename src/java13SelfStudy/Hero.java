@@ -1,4 +1,4 @@
-package com.java09;
+package java13SelfStudy;
 
 public class Hero {
     

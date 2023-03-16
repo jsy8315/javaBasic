@@ -1,6 +1,9 @@
-package com.java09;
+package java13SelfStudy;
 
 public class Wizard implements Life{
+    
+    Life life = new Wizard();
+    
     private int hp;
     private int mp;
     private String name;

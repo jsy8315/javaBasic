@@ -1,6 +1,6 @@
 package com.java12homework;
 
-public class Computer extends TangilbleAsset {
+public class Computer extends TangilbleAsset implements Thing {
     private String makerName;
     public String getMakerName() {
         return makerName;
