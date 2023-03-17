@@ -1,4 +1,4 @@
-package com.javaApplication14homework;
+package com.javaApplication4homework;
 // 응용 연습문제 04장
 public class StrongBox <T> {
       StrongBox<T> strongBox1 = new StrongBox<T>();
