@@ -12,4 +12,16 @@ public class Book {
     public void setTitle(String title) {
         this.title = title;
     }
+    public Date getPublishDate() {
+        return publishDate;
+    }
+    public void setPublishDate(Date publishDate) {
+        this.publishDate = publishDate;
+    }
+    public String getCommet() {
+        return comment;
+    }
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 }
