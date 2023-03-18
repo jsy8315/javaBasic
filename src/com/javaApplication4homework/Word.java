@@ -1,4 +1,4 @@
-package com.javaApplication14homework;
+package com.javaApplication4homework;
 // i번째 글자가 모음인지 알려주는 isVowel() 메서드를 완성하시오
 import java.util.*;
 import java.util.Arrays;
