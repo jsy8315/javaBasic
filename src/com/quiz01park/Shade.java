@@ -8,8 +8,9 @@ public class Shade {
 //  x_N y_N # 나무 그늘N의 x 좌표, y 좌표
   int x;
   int y;
+  int N;
   
-  Shade(int x, int y){
+  Shade (int x, int y){
     this.x = x;
     this.y = y;
   }
