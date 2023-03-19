@@ -1,5 +1,5 @@
 package com.javabookCh13;
 
 public class GenericExample {
-    /sdsdsdsdsds
+    //sdsdsdsdddddsds
 }
