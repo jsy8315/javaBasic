@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.Reader;
 import java.io.StringReader;
-
+import java.util.zip.GZIPOutputStream;
 
 import javax.imageio.stream.FileCacheImageOutputStream;
 // FileInputStream, FileOutputStream 클래스를 사용하여 파일을 복사하는 프로그램을 작성하시오. 
@@ -24,7 +24,7 @@ public class Practice61 {
 			// 복사할 파일
 			FileInputStream filePath = new FileInputStream(file);
 			// File object를 생성자 인수로 받기
-			FileOutputStream newFilePath = new FileOutputStream(newFile);
+			GZIPOutputStream newFilePath = new GZIPOutputStream(new FileOutputStream(newFile));
 			// 복사된 파일 위치
 			
 			byte[] b = new byte[1024];
