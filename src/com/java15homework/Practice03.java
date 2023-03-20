@@ -8,7 +8,7 @@ public class Practice03 {
 			System.out.println("예외 발생하지 않음");
 			System.out.println(i);
 		} catch (NumberFormatException e) {
-			System.out.println("예외가 발생함");
+			System.out.println("예외가 발생함 : " + string1 + "는  int가 아님");
 			e.printStackTrace();
 		}
 	}
