@@ -1,10 +1,10 @@
 package com.java12homework;
 
-public class Account {
+public class AccountTest {
     private String accountNumber;
     private int balance;
     
-    Account(String accountNumber, int balance) {
+    AccountTest(String accountNumber, int balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
@@ -29,8 +29,8 @@ public class Account {
 // System.out.println(a); 를 실행하면, 화면에 1592원 (계좌번호=4649)) 라고 표시
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof Account) {
-            Account other = (Account) obj;
+        if (obj instanceof AccountTest) {
+            AccountTest other = (AccountTest) obj;
             return accountNumber.trim().equals(other.getAccountNumber().trim());
         }
         return false;
