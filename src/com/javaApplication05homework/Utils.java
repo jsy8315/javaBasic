@@ -2,10 +2,10 @@ package com.javaApplication05homework;
 import java.util.*;
 
 interface Func1 {
-	int func1IsOdd (int n);
+	boolean func1IsOdd (int n);
 }
 interface Func2 {
-	void func2AddNamePrefix (boolean male, String name);
+	String func2AddNamePrefix (boolean male, String name);
 }
 
 public class Utils {
@@ -21,9 +21,12 @@ public class Utils {
 	}
 	
 	public static void main(String[] args) {
-		Func1 func1 = Utils.func1IsOdd(5);
-		System.out.println("5 % 2 == 1 :" + func1);
-		Func2 func2 = Utils.func2AddNamePrefix(true, "Suyoung");
-		System.out.println(func2);
+		Func1 func1 = Utils::isOdd;
+		boolean result1 = func1.func1IsOdd(5);
+		System.out.println("5 % 2 == 1 : " + result1);
+		
+		Func2 func2 = Utils::addNamePrefix;		
+		String result2 = func2.func2AddNamePrefix(true, "Suyoung");
+		System.out.println(result2);
 	}
 }
