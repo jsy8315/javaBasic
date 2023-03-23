@@ -50,7 +50,7 @@ public class Book {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(","); // "," 기준으로 분리하고, data array로 저장
-                    if (data[5].equals("1")) {
+                    if (data.length == 6 && data[5].equals("1")) {
                     	System.out.println("책제목 : " + data[0] + " 저자 : " + data[1] + " 출판사 : " + data[2]);
                     }
                 }
