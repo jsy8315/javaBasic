@@ -10,7 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         boolean shouldContinue = true;
 
-        while (shouldContinue) {
+        while (shouldContinue) { // 첫번째 while문 시작
             Menu firstMenu = new Menu();
             int layer1MenuInput = firstMenu.layer1Menu();
 
@@ -24,17 +24,21 @@ public class Main {
 
                 case 2:
                     boolean shouldContinue2 = true;
-                    while (shouldContinue2) {
+                    while (shouldContinue2) { // 두번째 while문 시작
                         Menu secondMenu = new Menu();
                         int layer2SecondMenuInput = secondMenu.layer2SecondMenu();
 
                         switch (layer2SecondMenuInput) {
                             case 1:
                             	// 1.회원확인
+                            	Member firstmember = new Member();
+                            	firstmember.memberIdentify();
                                 break;
 
                             case 2:
                                 // 2.회원가입
+                            	Member secondmember = new Member();
+                            	secondmember.memberAdd();
                                 break;
 
                             case 3:
@@ -49,7 +53,7 @@ public class Main {
                                 // 5.이전화면
                                 System.out.println("이전화면으로 돌아갑니다.\n");
                                 shouldContinue2 = false; // 수정: shouldContinue 변수를 true로 변경
-                                break;
+                                break; // 두번째 while문 탈출
                         }
                     }
                     break;
