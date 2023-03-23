@@ -43,10 +43,14 @@ public class Main {
 
                             case 3:
                                 // 3.회원삭제
+                            	Member thirdmember = new Member();
+                            	thirdmember.memberDelete();
                                 break;
 
                             case 4:
                                 // 4.직전회원삭제취소
+                            	Member fourthmember = new Member();
+                            	fourthmember.memberDeleteRecovery();
                                 break;
 
                             case 5:
