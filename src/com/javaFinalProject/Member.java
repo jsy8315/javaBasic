@@ -19,6 +19,7 @@ public class Member {
 	private String phonenumber;
 	private String birthday;
 	private String memberday;
+	private String age;
 	
 	Member() {}
 	
@@ -34,8 +35,8 @@ public class Member {
     // 1.회원확인 메소드
     public void memberIdentify() { 
     	
-    	boolean shouldContinue31 = true; 
-    	while (shouldContinue31) { // 세번째 while문 중 첫번째 메소드
+    	boolean shouldContinue121 = true; 
+    	while (shouldContinue121) { // 세번째 while문 중 첫번째 메소드
     	
 		System.out.print("회원 이름을 입력하세요 : "); //일단 이 사람이 회원인지 확인하기, 동명이인있을수 있으니까 전화번호까지 해서 
 		String inputName = sc.next(); // 이름 입력값 받기
@@ -52,14 +53,14 @@ public class Member {
                     System.out.println("찾은 멤버 정보 : " + data[0] + data[1] +data[2] + data[3] + data[4]);
                     isMemberFound = true;  // 일치하는 회원이 있었음을 표시
                     System.out.println("이전 화면으로 돌아갑니다."); // 이전 화면으로 돌아가기
-                    shouldContinue31 = false; // 수정: shouldContinue 변수를 true로 변경
+                    shouldContinue121 = false; // 수정: shouldContinue 변수를 true로 변경
                     break; // 두번째 while문 탈출
                 }
             }
             if (!isMemberFound) {  // 일치하는 회원이 없는 경우에만 문구 출력
                 System.out.println("회원이 아닙니다. 회원가입 후 이용 가능합니다.");
                 System.out.println("이전 화면으로 돌아갑니다."); // 이전 화면으로 돌아가기
-                shouldContinue31 = false; // 수정: shouldContinue 변수를 true로 변경
+                shouldContinue121 = false; // 수정: shouldContinue 변수를 true로 변경
                 break; // 두번째 while문 탈출
             }
             reader.close();
@@ -72,8 +73,8 @@ public class Member {
     // 회원가입하는 메소드
     public void memberAdd() {
     	
-    	boolean shouldContinue32 = true; 
-    	while (shouldContinue32) { // 세번째 while문 중 두번째 메소드
+    	boolean shouldContinue122 = true; 
+    	while (shouldContinue122) { // 세번째 while문 중 두번째 메소드
     		System.out.print("회원의 이름을 입력하세요 : ");
     		String inputName2 = sc.next(); // 
     		System.out.print("회원의 주소를 입력하세요 : ");
@@ -96,7 +97,7 @@ public class Member {
                 writer.close();
                 System.out.println("새로운 회원 정보가 추가되었습니다.");
                 System.out.println("이전 화면으로 돌아갑니다."); // 이전 화면으로 돌아가기
-                shouldContinue32 = false; // 수정: shouldContinue 변수를 true로 변경
+                shouldContinue122 = false; // 수정: shouldContinue 변수를 true로 변경
                 break; 
             } catch (IOException e) {
                 System.out.println("파일 쓰기 오류가 발생하였습니다.");
@@ -107,8 +108,8 @@ public class Member {
     // 3.회원삭제
     public void memberDelete() {
     	
-    	boolean shouldContinue33 = true; 
-    	while (shouldContinue33) { // 세번째 while문 중 두번째 메소드
+    	boolean shouldContinue123 = true; 
+    	while (shouldContinue123) { // 세번째 while문 중 두번째 메소드
     		System.out.print("회원의 이름을 입력하세요 : ");
     		String inputName3 = sc.next(); // 삭제할 회원 이름
     		System.out.print("회원 스마트폰 번호를 \"-\" 없이 입력하세요 : ");
@@ -165,7 +166,7 @@ public class Member {
                 }
                 writer.close(); // 파일 닫기
                 System.out.println("삭제가 완료되었습니다.");
-                        shouldContinue33 = false; // 수정: shouldContinue 변수를 true로 변경
+                        shouldContinue123 = false; // 수정: shouldContinue 변수를 true로 변경
                         break; // 33 while문 탈출
 
             } catch (IOException e) {
@@ -176,8 +177,8 @@ public class Member {
     // 4.직전회원삭제취소
         public void memberDeleteRecovery() {
         	
-        	boolean shouldContinue34 = true; 
-        	while (shouldContinue34) { // 세번째 while문 중 두번째 메소드
+        	boolean shouldContinue124 = true; 
+        	while (shouldContinue124) { // 세번째 while문 중 두번째 메소드
         		System.out.print("직전 회원의 삭제를 취소합니다.");
         		
        		 String sourceFile = "C:\\Users\\DA\\Documents\\GitHub\\finalproject\\memberBeforeDelete.csv";
@@ -201,7 +202,7 @@ public class Member {
     	            inputStream.close();
     	            outputStream.close();
                     System.out.println("삭제 취소가 완료되었습니다.");
-                    shouldContinue34 = false; // 수정: shouldContinue 변수를 true로 변경
+                    shouldContinue124 = false; // 수정: shouldContinue 변수를 true로 변경
                     break; // 34 while문 탈출
 
     	        } catch (IOException e) {

@@ -8,6 +8,8 @@ public class Book {
     private String publisher;
     private String isbn;
 
+    Book() {}
+    
     public Book(String title, String author, String publisher, String isbn) {
         this.title = title;
         this.author = author;
@@ -24,5 +26,10 @@ public class Book {
         return "제목: " + title + ", 저자: " + author + ", 출판사: " + publisher +
                 ", ISBN: " + isbn;
     }
+    
+    //메소드 구현하기
+    // 대출가능한 책 보여주기 (현재 가지고 있는 책)
+    // 대출 불가능한 책 보여주기 (현재 없는 책, 반납 기간이 임박한 순서대로 정렬하기)
+    // 전체 책을 출간된 순서대로 보여주기
 
 }
