@@ -31,5 +31,20 @@ public class Book {
     // 대출가능한 책 보여주기 (현재 가지고 있는 책)
     // 대출 불가능한 책 보여주기 (현재 없는 책, 반납 기간이 임박한 순서대로 정렬하기)
     // 전체 책을 출간된 순서대로 보여주기
+    
+    // 대출가능한 책 보여주기 (현재 가지고 있는 책)
+	public void showingPossibleBook() {
+		
+	}
+	
+    // 대출불가능한 책 보여주기 (현재 없는 책, 반납 기간이 임박한 순서대로 정렬하기)
+	public void showingImpossibleBook() {
+		
+	}
+	
+    // 전체 책을 출간된 순서대로 보여주기
+	public void showingLindedBook() {
+		
+	}
 
 }

@@ -44,7 +44,7 @@ public class Member {
 		String inputPhonenumber = sc.next();
 		
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\DA\\Documents\\GitHub\\finalproject\\member.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\member.csv"));
             String line;
             boolean isMemberFound = false;  // 일치하는 회원이 있는지 여부를 저장하는 변수
             while ((line = reader.readLine()) != null) {
@@ -91,7 +91,7 @@ public class Member {
             
             try {
                 // BufferedWriter를 사용하여 파일에 데이터를 추가함
-                BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\DA\\Documents\\GitHub\\finalproject\\member.csv", true)); // true는 append모드임을 나타냄
+                BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\member.csv", true)); // true는 append모드임을 나타냄
                 writer.write("\n");
                 writer.write(newMember); //
                 writer.close();
@@ -116,8 +116,8 @@ public class Member {
     		String inputPhonenumber3 = sc.next(); // 삭제할 회원 스마트폰 번호
     		
     		// 3.을 하기전 4. 직전회원 삭제 취소를 위해 삭제 전 파일을 복사해놓자
-    		 String sourceFile = "C:\\Users\\DA\\Documents\\GitHub\\finalproject\\member.csv";
-    	     String destinationFile = "C:\\Users\\DA\\Documents\\GitHub\\finalproject\\memberBeforeDelete.csv";
+    		 String sourceFile = "C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\member.csv";
+    	     String destinationFile = "C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\memberBeforeDelete.csv";
     	     // memberBeforeDelete란 이름으로 복사
 
     	        try {
@@ -144,7 +144,7 @@ public class Member {
     	    // 3. 회원삭제
     		
             try {
-                BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\DA\\Documents\\GitHub\\finalproject\\member.csv"));
+                BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\member.csv"));
                 List<String> newLines = new ArrayList<>(); // 수정된 데이터를 저장할 리스트
                 String line;
                 while ((line = reader.readLine()) != null) {
@@ -159,7 +159,7 @@ public class Member {
                 reader.close(); // 파일 닫기
 
                 // 새로운 파일 만들기
-                BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\DA\\Documents\\GitHub\\finalproject\\member.csv"));
+                BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\member.csv"));
                 for (String newLine : newLines) {
                     writer.write(newLine);
                     writer.newLine();
@@ -181,8 +181,8 @@ public class Member {
         	while (shouldContinue124) { // 세번째 while문 중 두번째 메소드
         		System.out.print("직전 회원의 삭제를 취소합니다.");
         		
-       		 String sourceFile = "C:\\Users\\DA\\Documents\\GitHub\\finalproject\\memberBeforeDelete.csv";
-    	     String destinationFile = "C:\\Users\\DA\\Documents\\GitHub\\finalproject\\member.csv";
+       		 String sourceFile = "C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\memberBeforeDelete.csv";
+    	     String destinationFile = "C:\\Users\\DA\\Documents\\GitHub\\javaBasic\\finalproject\\member.csv";
     	     // memberBeforeDelete란 이름으로 복사
 
     	        try {
