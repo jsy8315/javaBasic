@@ -94,7 +94,26 @@ public class Main {
                 case 3:
                     // 도서관리
                     boolean shouldContinue13 = true;
-                    while (shouldContinue13) { //메인 while문 안의 while문 내 세번째 while문: 13
+                    while (shouldContinue13) { //메인 while문 안의 세번째 while문 
+                        Menu bookMenu = new Menu();
+                    	int shouldContinue13Input = bookMenu.shouldContinue13Menu();
+                    	
+                    	switch (shouldContinue13Input) {
+                    		case 1: // 대출가능한 책 보여주기 (현재 가지고 있는 책)
+                            	Book firstbook = new Book();
+                            	firstbook.showingPossibleBook();
+                    			break;
+                    			
+                    		case 2: // 대출불가능한 책 보여주기 (현재 없는 책, 반납 기간이 임박한 순서대로 정렬하기)
+                    			Book secondbook = new Book();
+                    			secondbook.showingImpossibleBook();
+                    			break;
+                    			
+                    		case 3: // 전체 책을 출간된 순서대로 보여주기
+                    			Book thirdbook = new Book();
+                    			thirdbook.showingLindedBook();
+                    			break;
+                    	}
                     }
                     break;
 
