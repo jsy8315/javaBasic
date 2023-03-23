@@ -1,4 +1,4 @@
-package com.javaFianlProject;
+package com.javaFinalProject;
 // 책 정보 입력
 // 책의 기본 정보
 // 제목, 저자, 출판사, 키워드
