@@ -50,7 +50,7 @@ public class Member {
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(","); // "," 기준으로 분리하고, Member타입의 변수 member로 저장
                 if (data[0].equals(inputName) && data[2].equals(inputPhonenumber)) {
-                    System.out.println("찾은 멤버 정보 : " + data[0] + data[1] +data[2] + data[3] + data[4]);
+                    System.out.println("찾은 멤버 정보\n" + "이름 : " + data[0] + "\n주소 : " + data[1] + "\n스마트폰 번호 : " + data[2] + "\n생년월일 : " + data[3] + "\n회원등록날짜 : " + data[4]);
                     isMemberFound = true;  // 일치하는 회원이 있었음을 표시
                     System.out.println("이전 화면으로 돌아갑니다."); // 이전 화면으로 돌아가기
                     shouldContinue121 = false; // 수정: shouldContinue 변수를 true로 변경

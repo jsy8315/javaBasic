@@ -10,7 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         boolean shouldContinue1 = true;
 
-        while (shouldContinue1) { // 첫번째 while문 시작
+        while (shouldContinue1) { // 메인 while문 시작
             Menu firstMenu = new Menu();
             int shouldContinue1MenuInput = firstMenu.shouldContinue1Menu();
 

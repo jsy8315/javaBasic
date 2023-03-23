@@ -7,14 +7,16 @@ public class Book {
     private String author;
     private String publisher;
     private String isbn;
+    private String possible; //대출 가능 불가능을 1, 0으로 표시
 
     Book() {}
     
-    public Book(String title, String author, String publisher, String isbn) {
+    public Book(String title, String author, String publisher, String isbn, String possible) {
         this.title = title;
         this.author = author;
         this.publisher = publisher;
         this.isbn = isbn;
+        this.possible = possible;
     }
 
     public String getTitle() {
